@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./form.css" />
+</head>
+
+<body>
+    <h1>Form 1</h1>
+    <form name="fmhs" method="post" action="process.php">
+        <table width="50%" border="0">
+            <tr>
+                <td width="30%">NIM</td>
+                <td>
+                    <input name="fnim" type="number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>
+                    <input name="fnama" type="text" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Tgl Lahir</td>
+                <td>
+                    <input name="ftgl" type="date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>
+                    <select name="fprodi">
+                        <option value="">Pilih</option>
+                        <option value="11">Teknik Informatika - S1</option>
+                        <option value="12">Sistem Informasi - S1</option>
+                        <option value="22">Teknik Informatika - D3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Bidang Minat</td>
+                <td>
+                    <input type="checkbox" name="fminat1" value="01">
+                    <label>Web Programming</label>
+                    <br>
+                    <input type="checkbox" name="fminat2" value="02">
+                    <label>Mobile Programming</label>
+                    <br>
+                    <input type="checkbox" name="fminat3" value="03">
+                    <label>Data Science</label>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Lampiran Proposal</td>
+                <td><input type="file" name="fproposal"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+
+        const wonkifier = function () { var x = document.body.getElementsByTagName("*"); for (i = 0; i < x.length; i++) { var y = Math.floor((Math.random() * 2)); x[i].style.transform = "rotate(" + y + "deg)" } }
+        wonkifier();
+        setInterval(wonkifier, 10000);
+        
+    </script>
+</body>
+
+</html>
