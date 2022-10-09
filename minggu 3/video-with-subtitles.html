@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Video dengan Subtitle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="video.css" />
+  </head>
+
+  <body>
+    <h1>Video dengan Subtitle</h1>
+    <p>Perhatian, agar subtitle dapat dimuat, file ini harus dibuka dari web server, seperti XAMPP.</p>
+    <video id="myVideo" width="690" controls>
+      <source src="./assets/kelinci.mp4" type="video/mp4" />
+      <track
+        src="./assets/kelinci.vtt"
+        kind="subtitles"
+        srclang="id"
+        label="Indonesia"
+        default
+      />
+      Browser Anda jadul dan tidak bisa memainkan video.
+    </video>
+  </body>
+</html>
