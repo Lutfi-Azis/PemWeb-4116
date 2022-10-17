@@ -1,0 +1,34 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article,
+section {
+  padding: 0 40px;
+}
+
+nav {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: rgb(0, 64, 109);
+}
+
+table {
+  width: 100%;
+  line-height: 1.5;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.width-90 {
+  width: 500px;
+  max-width: 90%;
+}

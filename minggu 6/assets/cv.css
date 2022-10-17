@@ -1,0 +1,10 @@
+#personal-data-table__column {
+  width: 240px;
+  max-width: 50%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

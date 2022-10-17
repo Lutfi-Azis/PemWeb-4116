@@ -1,0 +1,7 @@
+textarea {
+  height: 240px;
+}
+
+input[type="submit"] {
+  font-size: larger;
+}
